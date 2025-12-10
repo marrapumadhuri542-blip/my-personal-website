@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+/* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e8;
+            color: #3b1f0b;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #a0522d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 12px;
+            padding: 8px 14px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        nav button:hover {
+            background-color: #7b3f1b;
+        }
+
+        /* PAGES */
+        .page {
+            display: none;
+            padding: 40px;
+            min-height: 80vh;
+        }
+
+        .active {
+            display: block;
+        }
+
+        h1 {
+            color: #8b4513;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin: 10px 10px 20px 0;
+            border-radius: 6px;
+        }
+
+        /* FORM */
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .submit {
+            background-color: #a0522d;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .submit:hover {
+            background-color: #7b3f1b;
+        }
+
+        .result-box {
+            margin-top: 25px;
+            background-color: #fff3e6;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        footer {
+            background-color: #a0522d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('technologies')">Technologies</button>
+    <button onclick="showPage('monitoring')">Crop Monitoring</button>
+    <button onclick="showPage('disease')">Disease Identifier</button>
+    <button onclick="showPage('benefits')">Benefits</button>
+    <button onclick="showPage('contact')">Contact</button>
+</nav>
+
+
+<!-- PAGES -->
+<div id="home" class="page active">
+    <h1><u>Precision Agriculture</u></h1>
+    <img src = farmer.jpg alt = farmer image height = 300px width = 300px>
+    <img src = vegetable.jpg alt= vegetable image height = 300px width = 300px>
+    <img src = precision.jpg alt = precision image height = 300px width = 300px>
+    <img src = agriculture.jpg alt = agriculture image height = 300px width = 300px>
+    
+    <p><strong><u>Definition:</u></strong> Precision Agriculture (PA) is a modern farming technique that uses advanced technologies to improve crop productivity and farm efficiency.</p>
+    <p><strong><u>Real-time Monitoring:</u></strong> Uses real-time data to monitor soil conditions, crop health, and weather changes.</p>
+    <p><strong><u>Site-Specific Farming:</u></strong> Enables treatment of different field areas based on their actual needs instead of uniform farming.</p>
+    <p><strong><u>Early Disease Detection:</u></strong> Helps in identifying crop diseases and pest attacks at an early stage.</p>
+    <p><strong><u>Efficient Irrigation:</u></strong> Supports smart irrigation systems that reduce water wastage and ensure proper water usage.</p>
+    <p><strong><u>Accurate Resource Usage:</u></strong> Improves the accuracy of fertilizer and pesticide application.</p>
+    <p><strong><u>Cost Reduction:</u></strong> Reduces farming input costs and increases farmer profitability.</p>
+    <p><strong><u>Sustainable Farming:</u></strong> Promotes eco-friendly and sustainable agricultural practices.</p>
+</div>
+
+<div id="technologies" class="page">
+    <h1><u>Modern Technologies Used in Precision Agriculture</u></h1>
+
+     <img src = soil.jpg alt = soil image height = 250px width = 400px>
+     <p><strong>1.<u>Soil Sensors:</u></strong>
+    Soil sensors are used to measure important parameters such as soil moisture, temperature, pH value, and nutrient content. These sensors provide accurate, real-time data that helps farmers decide when and how much to irrigate or fertilize. By using soil sensors, water wastage is reduced and crops receive the exact nutrients required for healthy growth.</p>
+
+     <img src = gps.jpg alt = gps image height = 250px width = 400px>
+     <p><strong>2.<u>Global Positioning System:</u></strong></p>
+    Global Positioning System (GPS) and Global Navigation Satellite System (GNSS) enable precise positioning of farm machinery. This technology supports accurate planting, spraying, and harvesting operations. It reduces overlapping and gaps in the field, saves fuel, and improves overall farm efficiency.</p>
+
+     <img src = drones.jpg alt = drones image height = 250px width = 400px>
+     <p><strong>3.<u> Drones (Unmanned Aerial Vehicles):</u></strong> 
+    Drones are widely used for aerial monitoring of crops. They capture high-resolution images that help detect crop stress, pest infestation, and disease spread at an early stage. Drones also help in field mapping and crop health assessment, allowing farmers to take timely corrective actions.</p>
+
+    <img src = iot.jpg alt = iot image height = 250px width = 400px>
+    <p><strong>4.<u> Internet of Things (IoT):</u></strong>  
+    IoT in agriculture connects various devices such as sensors, irrigation systems, and weather stations through the internet. Farmers can monitor farm conditions remotely using mobile or web applications. IoT enables automation, real-time alerts, and better decision-making, improving productivity and reducing manual effort.</p>
+
+     <img src = satellite.jpg alt = satellite image height = 250px width = 400px>
+     <p><strong>5.<u> Remote Sensing:</u></strong> 
+    Remote sensing uses satellite imagery and aerial data to observe large agricultural areas. It provides information on crop growth, soil moisture levels, and vegetation health. This technology helps farmers plan irrigation, fertilizer application, and crop management more effectively without physically visiting the field.</p>
+
+    
+    <img src = vrt.jpg alt = vrt image height = 250px width = 400px>
+    <p><strong>6.<u> Variable Rate Technology (VRT):</u></strong> 
+    Variable Rate Technology allows farmers to apply inputs such as seeds, fertilizers, water, and pesticides at varying rates across a field. The application rate is adjusted based on soil conditions and crop requirements. VRT improves yield, reduces input costs, and minimizes environmental impact.</p>
+
+    <img src = robotics.jpg alt = robotics image height = 250px width = 400px>
+    <p><strong>7.<u> Artificial Intelligence and Robotics:</u></strong> 
+    Artificial Intelligence (AI) and Machine Learning (ML) analyze large amounts of agricultural data to predict crop yield, detect plant diseases, and recommend best farming practices. These technologies help in forecasting weather patterns, improving crop management, and supporting smart farming decisions.</p>
+</div>
+
+<!-- CROP MONITORING -->
+<div id="monitoring" class="page">
+    <h1><u>Interactive Crop Monitoring</u></h1>
+
+    <p><strong>Enter crop details to get live field status.</strong></p>
+
+    <form onsubmit="monitorCrop(event)">
+        <input type="text" id="cropName" placeholder="Crop Name (Rice, Wheat, etc.)" required>
+
+        <select id="soilType" required>
+            <option value="">Select Soil Type</option>
+            <option value="clay">Clay Soil</option>
+            <option value="sandy">Sandy Soil</option>
+            <option value="loamy">Loamy Soil</option>
+        </select>
+
+        <input type="number" id="area" placeholder="Field Area (acres)" required>
+
+        <button type="submit" class="submit">Check Crop Status</button>
+    </form>
+
+    <div class="result-box" id="monitorResult">
+        <h3>🌱 Crop Status Report</h3>
+        <p><strong>Soil Moisture:</strong> <span id="moisture"></span></p>
+        <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+        <p><strong>Crop Health:</strong> <span id="health"></span></p>
+        <p><strong>Recommendation:</strong> <span id="recommendation"></span></p>
+    </div>
+</div>
+
+<!-- DISEASE IDENTIFIER -->
+<div id="disease" class="page">
+    <h1><u>Crop Disease Identifier</u></h1>
+
+    <p><strong>Select observed symptoms to identify possible disease.</strong></p>
+
+    <form onsubmit="identifyDisease(event)">
+        <select id="symptom" required>
+            <option value="">Select Symptom</option>
+            <option value="yellow">Yellow leaves</option>
+            <option value="brown">Brown spots</option>
+            <option value="white">White powdery spots</option>
+            <option value="wilting">Wilting of plant</option>
+            <option value="holes">Holes in leaves</option>
+        </select>
+
+        <button type="submit" class="submit">Identify Disease</button>
+    </form>
+
+    <div class="result-box" id="diseaseResult">
+        <h3> Disease Analysis</h3>
+        <p><strong>Possible Disease:</strong> <span id="diseaseName"></span></p>
+        <p><strong>Recommended Action:</strong> <span id="diseaseAction"></span></p>
+    </div>
+</div>
+
+<div id="benefits" class="page">
+    <h1><u>Benefits of Precision Agriculture</u></h1>
+
+    <h3>Higher Crop Yield:</h3>
+        <p>Accurate monitoring improves plant growth and maximizes overall crop productivity.</p><br>
+       
+    <h3>Water Conservation:</h3>
+        <p>Smart irrigation systems reduce water wastage and ensure optimal water usage.</p><br>
+
+    <h3>Cost Reduction:</h3>
+        <p>Optimized use of fertilizers and pesticides lowers farming expenses.</p><br>
+       
+    <h3>Eco-Friendly Farming:</h3>
+        <p>Reduces chemical usage and promotes sustainable agricultural practices.</p><br>
+        
+    <h3>Data-Driven Decisions:</h3>
+        <p>Real-time insights help farmers make better and timely decisions.</p><br>
+        
+    <h3>Efficient Resource Use:</h3>
+        <p>Ensures precise application of seeds, fertilizers, and pesticides.</p><br>
+
+    <h3>Reduced Crop Loss</h3>
+    <p>Early detection of pests, diseases, and nutrient deficiency helps prevent major crop damage.</p><br>
+
+    <h3>Weather Risk Management</h3>
+    <p>Real-time weather data helps farmers plan irrigation, spraying, and harvesting efficiently.</p> 
+</div>
+
+<div id="contact" class="page">
+    <img src = telephone.jpg alt = telephone image height = 150px width = 350px> 
+    <h1>Contact Information</h1>
+    <form>
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email ID" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="submit">Send Message</button>
+    </form>
+    <footer>
+        <p>© 2025 Precision Agriculture | Internet Programming Project</p>
+    </footer>
+</div>
+
+<!-- BASIC JS TO SWITCH PAGES -->
+<script>
+    function showPage(pageId) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+    }
+function monitorCrop(event) {
+        event.preventDefault();
+
+        const soil = document.getElementById("soilType").value;
+
+        let moisture, temperature, health, recommendation;
+
+        if (soil === "clay") {
+            moisture = "High (65%)";
+            temperature = "28°C";
+            health = "Good";
+            recommendation = "Reduce irrigation to prevent waterlogging.";
+        } else if (soil === "sandy") {
+            moisture = "Low (30%)";
+            temperature = "32°C";
+            health = "Moderate";
+            recommendation = "Increase irrigation and add organic manure.";
+        } else {
+            moisture = "Optimal (50%)";
+            temperature = "26°C";
+            health = "Excellent";
+            recommendation = "Maintain current farming practices.";
+        }
+
+        document.getElementById("moisture").textContent = moisture;
+        document.getElementById("temperature").textContent = temperature;
+        document.getElementById("health").textContent = health;
+        document.getElementById("recommendation").textContent = recommendation;
+
+        document.getElementById("monitorResult").style.display = "block";
+    }
+
+    function identifyDisease(event) {
+        event.preventDefault();
+
+        const symptom = document.getElementById("symptom").value;
+        let disease, action;
+
+        if (symptom === "yellow") {
+            disease = "Nitrogen Deficiency / Leaf Chlorosis";
+            action = "Apply nitrogen-based fertilizers.";
+        } 
+        else if (symptom === "brown") {
+            disease = "Leaf Blight";
+            action = "Use recommended fungicides and remove infected leaves.";
+        }
+        else if (symptom === "white") {
+            disease = "Powdery Mildew";
+            action = "Spray sulfur-based fungicide.";
+        }
+        else if (symptom === "wilting") {
+            disease = "Fusarium Wilt";
+            action = "Improve drainage and use resistant crop varieties.";
+        }
+        else {
+            disease = "Pest Infestation";
+            action = "Apply suitable insecticides or neem oil.";
+        }
+
+        document.getElementById("diseaseName").textContent = disease;
+        document.getElementById("diseaseAction").textContent = action;
+        document.getElementById("diseaseResult").style.display = "block";
+    }
+
+</script>
+
+</body>
+</html>
